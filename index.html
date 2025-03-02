@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header{
+            background-color: #0056b3;
+            padding: 10px;
+            display: flex;
+            
+        }
+        .header img{
+            margin-left: 100px;
+            width: 100px;
+        }
+        .header p{
+            margin-top: 40px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:larger;
+            color: white;
+            margin-left: -20px;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 30px;
+            padding: 20px;
 
+        }
+        .container1 {
+            max-width: 1200px;
+            gap: 30px;
+            padding: 20px;
+            
+        }
+        .sidebar {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .sidebar ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .sidebar ul li a:hover{
+            color: blue;
+        }
+        .sidebar ul li:hover {
+            transform: translateX(5px);
+        }
+        .blog-posts {
+            width: 45%;
+            margin-left: 50px;
+        }
+        .post {
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .post:hover {
+            transform: scale(1.03);
+            
+        }
+        .post img {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .post h2 {
+            color: #0056b3;
+            font-weight: 600;
+        }
+        .excerpt {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+        .excerpt .more {
+            display: none;
+        }
+        .read-more {
+            color: #0056b3;
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        .read-more:hover {
+            color: #003d80;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/blog_logo.png" alt="logo">
+        <p><b>Updates</b></p>
+    </div>
+    <div class="container">
+        <div class="container1">
+            <aside class="sidebar">
+                <h2>ALL</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#naspendrive"> NAS Pendrive</a></li>
+                        <li><a href="#facegolden"> Face Golden ratio Check</a></li>
+                        <li><a href="#autoimage"> Auto Image Compressor</a></li>
+                        <li><a href="#regulafalsi"> Regula Falsi Method Website</a></li>
+                        <li><a href="#mobilesignal"> Mobile Signal Enhancement Device</a></li>
+                        <li><a href="#touchpen">Pen Mouse</a></li>
+                        <li><a href="#smellchip">Smell Chip</a></li>
+                        <li><a href="#camdrone">Automated Camera Switch Drone</a></li>
+                        <li><a href="#brain">AI-powered Neural Interpreter</a></li>
+                        <li><a href="#upiapp">Bill Payments App</a></li>
+                        <li><a href="#aidairy">AI DAIRY</a></li>
+                        <li><a href="#textbook">gpt Model</a></li>
+                        
+                    </ul>
+                </nav>
+                <h2>Computer Science</h2>
+                <ul>
+                    <li><a href="#facegolden"> Face Golden ratio Check</a></li>
+                    <li><a href="#brain">AI-powered Neural Interpreter</a></li>
+                    <li><a href="#upiapp">Bill Payments App</a></li>
+                    <li><a href="#aidairy">AI DAIRY</a></li>
+                    <li><a href="#textbook">gpt Model</a></li>
+                </ul>
+                <h2>Web Technologies</h2>
+                <ul>
+                    <li><a href="#autoimage"> Image Compressor</a></li>
+                    <li><a href="#regulafalsi"> Regula Falsi Method</a></li>
+                </ul>
+                <h2>Electronics</h2>
+                <ul>
+                    <li><a href="#naspendrive"> NAS Pendrive</a></li>
+                    <li><a href="#mobilesignal"> Mobile Signal Enhancement Device</a></li>
+                    <li><a href="#touchpen">Pen Mouse</a></li>
+                    <li><a href="#smellchip">Smell Chip</a></li>
+                    <li><a href="#camdrone">Automated Camera Switch Drone</a></li>
+                </ul>
+            </aside>
+        </div>
+        <main class="blog-posts" >
+            <article class="post" id="naspendrive">
+                <img src="img/NAS.jpg" alt="Featured">
+                <h2>NAS Pendrive</h2>
+                <p class="excerpt">Now-a-days data usage increses in our day to day life. Imagine having your own personal cloud that fits right in your pocket — that’s the power of a NAS Pendrive. A <b>Network-Attached Storage (NAS)</b> Pendrive combines the<span class="more"> portability of a USB drive with the functionality of a NAS device, allowing users to access, share, and manage files over a network without relying on third-party cloud services.
+                    With a NAS Pendrive, you can store your data securely and access it remotely from any device connected to the same network. Whether you're working on a collaborative project, backing up critical files, or streaming media across devices, this innovative solution offers convenience, speed, and control over your digital assets.<br>
+                    The NAS Pendrive is an ideal solution for students, professionals, and creators looking for an affordable, easy-to-use, and flexible storage option. As technology continues to evolve, this device bridges the gap between traditional USB drives and large-scale cloud services, empowering users to control their data without compromise.<br></span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="facegolden">
+                <img src="img/facegolden.jpg" alt="Featured">
+                <h2>Face Golden Ratio Check</h2>
+                <p class="excerpt">Developed a Python-based tool that analyzes facial images to calculate their adherence to the <b>golden ratio</b>, <span class="more">providing a beauty score
+                    out of 10. This project demonstrates proficiency in image processing and mathematical analysis.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="autoimage">
+                <img src="img/autoimage.jpg" alt="Featured">
+                <h2>Auto Image Compressor</h2>
+                <p class="excerpt">I developed an <b>Auto Image Compressor </b>tool designed to simplify the image upload process. This tool automatically compresses images to under<span class="more">200 KB without compromising quality, making it perfect for online forms with strict size limits. Once compressed, the image is instantly uploaded to the form, eliminating the need for manual resizing or third-party apps. It’s a time-saving, seamless solution for users who frequently upload images for job applications, registrations, or documentation — ensuring they never struggle with file size restrictions again.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="regulafalsi">
+                <img src="img/regulafalsi.jpg" alt="Featured">
+                <h2>Regula Falsi Method website</h2>
+                <p class="excerpt">Developed a web-based application implementing the <b>Regula-Falsi (False Position) Method </b>to find function roots.<span class="more">Users input a
+                    function, initial guesses, and a tolerance value; the tool iteratively applies the method, displaying results in a table.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="mobilesignal">
+                <img src="img/mobilesignal.jpg" alt="Featured">
+                <h2>Mobile Signal Enhancement Devices: Stay Connected Anytime, Anywhere</h2>
+                <p class="excerpt">In our daily lives, dropped calls and weak mobile signals can be frustrating, especially in remote areas or inside buildings with poor network coverage. This connectivity issue disrupts important conversations, delays tasks, and limits access to online services. To solve this,<span class="more"> <b>Mobile Signal Enhancement Device</b> come to the rescue. These devices amplify weak signals, boosting network strength for seamless calls, faster internet, and reliable messaging. By capturing the existing signal, enhancing its power, and rebroadcasting it within a targeted area, these devices ensure consistent coverage, even in signal-dead zones. Whether at home, in the office, or on the go, signal enhancers provide a simple yet powerful solution to stay connected anytime, anywhere.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="touchpen">
+                <img src="img/touchpen.jpg" alt="Featured">
+                <h2>Pen Mouse: Conver your system screens into touch like sensors</h2>
+                <p class="excerpt">Working on non-touchscreen devices often feels limiting, especially when trying to draw, design, or navigate with precision. Using a traditional mouse or trackpad can be frustrating for creative tasks or detailed edits. That’s where the <b>Pen Mouse</b> comes in — a sleek, <span class="more">handheld device that turns any normal screen into a touch-like experience. Acting like a stylus, the pen mouse allows users to point, click, and draw with natural hand movements, making interactions more intuitive. Unlike standard screens that require physical touch or expensive upgrades, a pen mouse uses motion sensors or wireless signals to simulate touch functionality, giving users the freedom to sketch, write, and navigate effortlessly. It bridges the gap between regular displays and touchscreens, offering an affordable and portable alternative for students, designers, and anyone seeking a more hands-on digital experience.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="smellchip">
+                <img src="img/smellchip.jpg" alt="Featured">
+                <h2>Smell Chip: Experience smell virtually</h2>
+                <p class="excerpt">Imagine shopping for perfumes online or exploring fragrances through a screen, but never knowing how they truly smell until they arrive — sometimes not matching expectations. This gap between virtual browsing and real-life experience inspired the creation of the <b>Smell Chip</b>. This innovative device allows users to <span class="more">smell fragrances, like perfumes or scented products, virtually by generating a small, controlled amount of the desired scent. The chip uses micro-capsule technology to release precise scent molecules, replicating the original fragrance in tiny quantities, just enough for a quick check. It transforms ordinary devices into scent testers, bridging the sensory gap in online shopping and digital experiences. With a smell chip, users can "try before they buy," making scent exploration as easy and immersive as scrolling through a product catalog.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="camdrone">
+                <img src="img/drone.jpg" alt="Featured">
+                <h2>Automated Camera Switch Drone: A dynamic approach to capturing Drone shots</h2>
+                <p class="excerpt">Capturing every angle of an event or object often requires multiple setups or constant manual adjustments, making it hard to get a complete view. To solve this, I’m designing an <b>Automated Camera Switch Drone</b> that helps users focus on a <span class="more">single subject from multiple directions effortlessly. This drone carries multiple cameras pointing in different directions, automatically switching between them to always capture the best angle. Whether tracking a moving object, recording dynamic events, or creating immersive video content, the drone intelligently selects the optimal camera view, eliminating the need for manual controls. It offers a seamless, 360-degree perspective, making it perfect for filmmakers, vloggers, researchers, and anyone looking to capture every detail from all sides with minimal effort.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="brain">
+                <img src="img/brain.jpg" alt="Featured">
+                <h2>AI-powered Neural Interpreter</h2>
+                <p class="excerpt">Imagine being able to understand your thoughts directly through technology. This project is about an <b>AI-powered Neural Interpreter</b>, an innovative tool designed to decode brain activity and translate it into interpretable data. This device utilizes advanced <span class="more">artificial intelligence algorithms to analyze brain signals, offering insights into cognitive processes and potentially revolutionizing how we interact with machines.<br><br>
+                    Recent advancements have demonstrated the potential of AI in interpreting brain activity. For instance, researchers have developed systems capable of decoding visual representations from brain signals with remarkable temporal resolution
+                    Additionally, AI algorithms have been used to reconstruct visual experiences by analyzing brain scans.<br><br>
+                    The AI-powered Neural Interpreter aims to build upon these developments, providing real-time interpretations of brain activity. This technology could have profound applications in various fields, including neuroscience research, brain-computer interfaces, and enhancing our understanding of human cognition.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="upiapp">
+                <img src="img/upi.jpg" alt="Featured">
+                <h2>HAPAY: Sit and Pay Your Bill From Your Table</h2>
+                <p class="excerpt">Picture this: you finish a meal at a restaurant, and instead of waiting for the bill or handling cash, you simply scan a QR code, and everything is settled through an app. I’m designing an app that streamlines transactions between <span class="more">merchants and users, making payments seamless and hassle-free. Both users and merchants get a unique ID, and when they share it — via QR code, NFC, or a simple link — the merchant can instantly add the bill to the user’s account. The user then reviews and pays the amount directly in the app, with no need for physical bills, card swipes, or extra communication.<br><br>
+                    For example, in a restaurant, the server can generate the bill and link it to the user's account in seconds. The user scans a code at their table, views the itemized bill, and pays — all within the app. No waiting, no confusion. This system reduces errors, speeds up service, and enhances the dining experience. We can further expand the app with features like split bills, tipping options, transaction history, and personalized offers, creating a complete digital ecosystem for easy and secure payments.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="aidairy">
+                <img src="img/aidairy.jpg" alt="Featured">
+                <h2>AI DAIRY: The place you can store your emotions securely and get personal guidence.</h2>
+                <p class="excerpt"><b>Imagine this:</b> You’ve had a long, exhausting day. Your mind is racing with thoughts — worries about your future, confusion over an important decision, and the weight of emotions you can’t quite <span class="more"> into words. You grab your phone, open an app, and start writing.
+
+                    As you pour your heart out, the app listens. It gently analyzes your words, detects your emotions, and offers thoughtful suggestions. Feeling anxious? It suggests mindfulness exercises. Torn between two decisions? It helps you list the pros and cons. Overwhelmed with self-doubt? It delivers an uplifting affirmation tailored to your feelings.<br><br>
+                    
+                    <b>The Vision:</b> An AI-powered personal diary that’s more than just a digital notebook. It becomes a silent companion, helping users not only document their days but also navigate life’s uncertainties. For young people facing the pressures of academics, careers, and personal growth, this tool could be a game-changer — providing mental clarity, emotional support, and a path forward.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            <article class="post" id="textbook">
+                <img src="img/textbook.jpg" alt="Featured">
+                <h2>gpt Model</h2>
+                <p class="excerpt"><b>Imagine this:</b> You’re stuck on a complex math problem or struggling to understand a historical event. Instead of flipping through pages or browsing countless websites, you turn to an <span class="more"> model trained on a vast library of textbooks. You ask your question, and the AI responds with clear, accurate explanations — just like a knowledgeable tutor.<br><br>
+
+                    <b>The Vision:</b> A ChatGPT model enriched with textbook metadata, designed to be an ultimate learning companion. Whether it's science, literature, or computer science, this AI can break down concepts, summarize chapters, and even provide practice questions to reinforce understanding.</span>
+                <span class="read-more">Read more</span></p>
+            </article>
+            
+        </main>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".read-more").forEach(button => {
+                button.addEventListener("click", function() {
+                    let excerpt = this.previousElementSibling;
+                    if (excerpt.style.display === "none" || excerpt.style.display === "") {
+                        excerpt.style.display = "inline";
+                        this.textContent = "Read less";
+                    } else {
+                        excerpt.style.display = "none";
+                        this.textContent = "Read more";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
